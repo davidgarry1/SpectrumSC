@@ -11,74 +11,16 @@
   padding-bottom: 25px;
 }
 
-.text-content {
-  background-color: #FFCC00;
-  position:relative;
-  width:100%;
-  vertical-align: center;
-  text-align: center;
-  visibility: none;
-  font-size: 1.04vw;
-  display: none;
-  padding: 10px;
-}
-
-.mainimg {
-  width: 40%;
-}
-
-.mainimg {
-   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(3px 3px 10px #000);
-    filter: grayscale(0%) contrast(100%) drop-shadow(3px 3px 10px #000);
-
-      -webkit-transition:all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    -ms-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
-}
-
-.imagehov:hover .text-content {
-  pointer-events:none;
-  display: block;
-}
-
-.imagehov:hover .bimg {
-  visibility: none;
-
-  display: none;
-}
-
-
-.bimg {
-  width: 80%;
-  vertical-align: center;
-  text-align: center;
-}
 
 img {
   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
+    border-radius: 5px;
 }
 
 .btn-lg {
   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
-}
-
-.sideimg {
-  width: 100%;
-  max-width: 300px;
-  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
-  filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
-}
-
-.sideimgsm {
-  width: 66%;
-  max-width: 200px;
-  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
-  filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 5px #000);
-
 }
 
 body {
@@ -94,20 +36,32 @@ body {
   margin: 10px;
 }
 
-.bordered {
-  border: 2px solid #FFCC00;
-}
-
-
 .whiteboxed {
-  border: 2px solid #FFCC00;
-  background-color: #FFCC00;
+  border: 1px solid #000;
+  border-radius: 5px;
   margin: 10px;
   padding: 10px;
     -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);;
     filter: grayscale(0%) contrast(100%) drop-shadow(1px 1px 2px #000);
 }
 
+.red {
+  background-color: #990000;
+}
+
+.yellow {
+  background-color: #fff;
+}
+
+.person {
+  width: 95%;
+  padding: 10px;
+}
+
+.personimg {
+  width: 100%;
+  padding-bottom: 15px;
+}
 
 .minicontact {
   text-transform: uppercase;
@@ -119,48 +73,42 @@ body {
   padding-top: 30px;
 }
 
-.rightcolumn {
-  border: #000;
-  border-left: thick double #FFCC00;
-  font-size: 1.3vw;
-  text-align: left;
-}
-.leftcolumn {
-  border: #000;
-  border-right: thick double #FFCC00;
-  font-size: 1.3vw;
-  text-align: right;
-}
-
 html {
   width: 100%;
   height: 100%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2 {
   margin: 0 0 35px;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 p {
-  margin: 0 0 25px;
-  font-size: 1.35vw;
-  line-height: 1.5;
+  margin: 3px;
+  font-size: 1.2em;
+  line-height: 1.3;
 }
 @media (min-width: 768px) {
   p {
-    margin: 0 0 35px;
-    font-size: 1.4vw;
+    margin: 5px;
+    font-size: 1.2em;
     line-height: 1.6;
   }
 }
+
 a {
-  color: #FFCC00;
+  color: black;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -170,15 +118,17 @@ a:focus {
   text-decoration: none;
   color: #990000;
 }
+
 .light {
   font-weight: 400;
 }
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  background-color: black;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat top center #000;
 }
 .navbar-custom .navbar-toggle {
   color: black;
@@ -234,7 +184,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background:  #FFCC00;
+    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat top center #000;
     border-bottom: 2px solid rgba(0,0,0, 0.8);
   }
 }
@@ -305,7 +255,7 @@ a:focus {
 .odd {
   width: 100%;
   padding: 50px;
-  background-color: #f1f1f1;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -316,7 +266,7 @@ a:focus {
   width: 100%;
   padding-top: 50px;
   color: black;
-  background-color: white;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -337,19 +287,18 @@ a:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-radius: 0;
+  border-radius: 5px;
 }
 .btn-default {
-  border: 1px solid  #FFCC00;
-  color: black;
-  background-color:  #FFCC00;
+  color: white;
+  outline: none;
+  background-color:  black;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #990000;
   outline: none;
-  color: white;
-  background-color: #990000;
+  color: black;
+  background-color: white;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -381,7 +330,9 @@ ul.banner-social-buttons {
 footer {
   padding: 0px 0;
   color: white;
-  background-color: #FFCC00;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat bottom center #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -397,7 +348,7 @@ footer a {
     transition: all 0.2s ease-in-out;
 }
 footer a:hover {
-    color: #990000;
+    color: white;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -412,6 +363,7 @@ footer a:hover {
   background: #FFCC00;
   background: rgba(255, 255, 255, 0.2);
 }
+
 img::selection {
   background: transparent;
 }
@@ -432,7 +384,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #990000;
+    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
    /* -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
