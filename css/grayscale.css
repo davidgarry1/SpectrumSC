@@ -128,7 +128,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat top center #000;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bar.jpg?raw=true') no-repeat top center #000;
 }
 .navbar-custom .navbar-toggle {
   color: black;
@@ -184,7 +184,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat top center #000;
+    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bar.jpg?raw=true') no-repeat top center #000;
     border-bottom: 2px solid rgba(0,0,0, 0.8);
   }
 }
@@ -196,7 +196,7 @@ a:focus {
   padding: 80px 0;
   text-align: center;
   color: black;
-  background: url(https://github.com/davidgarry1/SpectrumSC/blob/master/img/background.jpg?raw=true) no-repeat top center scroll;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/background.jpg?raw=true') no-repeat top center scroll;
   /*background: url(../img/la.jpg) no-repeat bottom center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
@@ -252,21 +252,38 @@ a:focus {
   padding: 50px;
 }
 
-.odd {
+.odd, .even {
   width: 100%;
   padding: 50px;
-  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
+
+}
+
+.one{
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-2.jpg?raw=true') no-repeat center center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 
-.even {
-  width: 100%;
-  padding-top: 50px;
-  color: black;
-  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
+.two {
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat center center #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.three {
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-5.jpg?raw=true') no-repeat center center #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.four {
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-3.jpg?raw=true') no-repeat center center #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -330,7 +347,7 @@ ul.banner-social-buttons {
 footer {
   padding: 0px 0;
   color: white;
-  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bg-4.jpg?raw=true') no-repeat bottom center #000;
+  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bar.jpg?raw=true') no-repeat bottom center #000;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   -webkit-background-size: cover;
