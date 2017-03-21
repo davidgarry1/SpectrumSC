@@ -68,7 +68,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
-  font-size: 1vw;
+  font-size: 1em;
   text-align: left;
   padding-top: 30px;
 }
@@ -128,12 +128,12 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bar.jpg?raw=true') no-repeat top center #000;
+  background: url('') no-repeat top center #fff;
 }
 .navbar-custom .navbar-toggle {
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 1vw;
+  font-size: 1em;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -184,7 +184,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/bar.jpg?raw=true') no-repeat top center #000;
+    background: url('') no-repeat top center #fff;
     border-bottom: 2px solid rgba(0,0,0, 0.8);
   }
 }
@@ -211,15 +211,26 @@ a:focus {
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
 }
 
+.brand-heading2 {
+  text-shadow: #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px,
+             #fff 0px 0px 1px,   #fff 0px 0px 1px,   #fff 0px 0px 1px;
+}
+
 .intro .intro-body {
   padding-top: 90px;
   display: table-cell;
   vertical-align: middle;
 }
-.intro .intro-body .brand-heading {
+.intro .intro-body .brand-heading  {
   font-size: 3em;
   -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
     filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
+
+}
+.brand-heading2  {
+  font-size: 3em;
+  -webkit-filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #000);
+    filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #000);
 
 }
 .intro .intro-body .intro-text {
@@ -234,12 +245,16 @@ a:focus {
     filter: grayscale(0%) contrast(100%) drop-shadow(2px 2px 10px #FFF);
 }
 
+
 @media (min-width: 768px) {
   .intro {
     height: 100%;
     padding: 0;
   }
   .intro .intro-body .brand-heading {
+    font-size: 6em;
+  }
+  .brand-heading2 {
     font-size: 6em;
   }
   .intro .intro-body .intro-text {
@@ -395,17 +410,29 @@ body {
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('https://github.com/davidgarry1/SpectrumSC/blob/master/img/logo-tiny.png?raw=true') no-repeat center center #000;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background: #000;
    /* -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;*/
+}
+
+.loading {
+  font-size: 1em;
+}
+
+.centercon {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 
